@@ -32,7 +32,37 @@ img {
 }
 
 /* 1. Flex - Header Navigation */
-
+.header{
+  background-color: #1d1d1d;
+  color: white;
+  padding: 1.5rem 0;
+}
+.header-logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+.header-links{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.header-links a{
+  color: #fff;
+  text-decoration: none;
+}
+.header-links a:hover{
+  color: #9c9c9c;
+  cursor: pointer;
+}
 /* 2. Flex and Column - Featured Section */
 
 /* 3. Flex/Grid List - Latest Cards */
