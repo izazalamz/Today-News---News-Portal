@@ -9,7 +9,11 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+}
 section {
   padding: 6rem 0;
 }
@@ -25,11 +29,7 @@ section h2 {
 }
 
 /* TEMPORARY - Remove after adding all the styles */
-img {
-  display: block;
-  width: 100px;
-  height: 100px;
-}
+
 
 /* 1. Flex - Header Navigation */
 .header{
@@ -64,7 +64,55 @@ img {
   cursor: pointer;
 }
 /* 2. Flex and Column - Featured Section */
-
+.featured{
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0;
+  height: 600px;
+}
+.featured-image{
+  flex-basis: 50%;
+  height: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+.featured-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-content{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+.featured-more{
+  color: #fff;
+  background-color: #1d1d1d;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.featured-more:hover{
+  color: #d9d8d8;
+  background-color: #414141;
+  cursor: pointer;
+}
+.featured-footer{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.featured-content p{
+  color: #4d4d4d;
+}
 /* 3. Flex/Grid List - Latest Cards */
 
 /* 4. Flex/Grid 2D - Hot News */
